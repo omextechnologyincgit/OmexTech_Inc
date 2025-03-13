@@ -1,0 +1,70 @@
+.bodyofaboutcore {
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .culture-container {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .culture-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .culture-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .culture-card {
+    background: linear-gradient(135deg, #ffffff, #eef2f3);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .culture-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .icon-container {
+    font-size: 2rem;
+    color: #007bff;
+    background: rgba(0, 123, 255, 0.1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    .culture-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  

@@ -1,0 +1,91 @@
+.chat-popup {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background: #ffffff;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 9999;
+    animation: popupIn 0.3s ease-out;
+  }
+  
+  .popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  .popup-header span {
+    color: #8e24aa;
+  }
+  
+  .popup-header .close-icon {
+    cursor: pointer;
+  }
+  
+  .chat-window {
+    height: 300px;
+    overflow-y: auto;
+    margin-top: 10px;
+  }
+  
+  .bot-message,
+  .user-message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .bot-message {
+    background-color: #f0f0f0;
+    text-align: left;
+  }
+  
+  .user-message {
+    background-color: #00bcd4;
+    color: white;
+    text-align: right;
+  }
+  
+  .input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .input-container input {
+    width: 75%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .input-container button {
+    padding: 10px;
+    background-color: #8e24aa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .input-container button:hover {
+    background-color: #6a1b9a;
+  }
+  
+  @keyframes popupIn {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

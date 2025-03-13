@@ -1,0 +1,225 @@
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    width: 100%;
+  }
+  
+  .navbar-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    color: #10b981;
+    font-weight: 700;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .logo-svg {
+    fill: currentColor;
+  }
+  
+  .desktop-nav {
+    display: none;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .desktop-nav {
+      display: flex;
+    }
+  }
+  
+  .nav-link {
+    color: #374151;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: color 0.2s;
+  }
+  
+  .nav-link:hover {
+    color: #10b981;
+  }
+  
+  .dropdown-icon {
+    font-size: 0.625rem;
+    margin-left: 0.25rem;
+  }
+  
+  .right-icons {
+    display: none;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  @media (min-width: 768px) {
+    .right-icons {
+      display: flex;
+    }
+  }
+  
+  .icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #4b5563;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s;
+  }
+  
+  .icon-button:hover {
+    color: #10b981;
+  }
+  
+  .translate-icon {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .mobile-menu-button {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #4b5563;
+  }
+  
+  @media (min-width: 768px) {
+    .mobile-menu-button {
+      display: none;
+    }
+  }
+  
+  /* Mobile sidebar overlay */
+  .mobile-sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 35;
+  }
+  
+  /* Mobile sidebar */
+  .mobile-sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Start completely off-screen */
+    height: 100%;
+    width: 80%; /* Use percentage of screen width */
+    max-width: 300px; /* But limit maximum width */
+    background-color: #ffffff;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 40;
+    transition: right 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Make scrollable if content is too much */
+  }
+  
+  .mobile-sidebar.open {
+    right: 0; /* Move to visible area when open */
+  }
+  
+  /* Ensure no content is visible when sidebar is closed */
+  @media (max-width: 767px) {
+    .mobile-sidebar:not(.open) {
+      visibility: hidden;
+    }
+  }
+  
+  /* Hide sidebar completely on desktop */
+  @media (min-width: 768px) {
+    .mobile-sidebar {
+      display: none;
+    }
+  }
+  
+  .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .close-button {
+    background-color: transparent;
+    border: none;
+    color: white; /* Change the color to white */
+    cursor: pointer;
+    transition: color 0.3s ease; /* Smooth transition for color */
+  }
+  
+  .close-button:hover {
+    color: #00c6ff; /* Optional: change to any hover color you like */
+  }
+  
+  
+  .sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .sidebar-link {
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #f3f4f6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .sidebar-link:hover {
+    color: #10b981;
+  }
+  
+  .badge {
+    background-color: #3b82f6;
+    color: white;
+    font-size: 0.625rem;
+    padding: 0.125rem 0.375rem;
+    border-radius: 0.25rem;
+    margin-left: 0.5rem;
+  }
+  
+  .new-badge {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .mobile-badge {
+    background-color: #3b82f6;
+    color: white;
+    font-size: 0.625rem;
+    padding: 0.125rem 0.375rem;
+    border-radius: 0.25rem;
+  }
+
+
+  

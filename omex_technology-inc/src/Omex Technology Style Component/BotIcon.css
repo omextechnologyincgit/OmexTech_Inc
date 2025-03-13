@@ -1,0 +1,20 @@
+.bot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(45deg, #00bcd4, #8e24aa);
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .bot-icon.open {
+    transform: scale(1.1);
+  }
+  
+  .bot-icon:hover {
+    background: linear-gradient(45deg, #8e24aa, #00bcd4);
+  }
+  

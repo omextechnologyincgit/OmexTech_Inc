@@ -1,0 +1,82 @@
+/* components/ContactCta.css */
+.contact-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    color: white;
+  }
+  
+  .contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+  
+  .contact-text {
+    flex: 1;
+  }
+  
+  .contact-text .section-title {
+    color: white;
+  }
+  
+  .contact-text .section-title::after {
+    background: white;
+  }
+  
+  .contact-text p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .btn-outline {
+    background: transparent;
+    border: 2px solid white;
+  }
+  
+  .btn-outline:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .contact-image {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .contact-image .image-container {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+  
+  .contact-image .image-container:hover img {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .contact-content {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .cta-buttons {
+      justify-content: center;
+    }
+    
+    .contact-image {
+      max-width: 100%;
+    }
+  }
+  
