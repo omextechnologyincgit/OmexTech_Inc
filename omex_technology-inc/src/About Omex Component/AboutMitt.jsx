@@ -221,7 +221,7 @@ const AboutMitt = () => {
       </section>
 
       {/* Section 4: Our Team */}
-      <section 
+      {/* <section 
         ref={sectionRefs[3]} 
         className={`team-section ${visibleSections.section3 ? 'visible' : ''}`}
       >
@@ -306,7 +306,7 @@ const AboutMitt = () => {
              <Link to="/careerOmex"><button className="cta-button">View Career Opportunities</button></Link>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Section 5: Achievements */}
       <section 
@@ -315,7 +315,7 @@ const AboutMitt = () => {
       >
         <div className="section-content">
           <div className="section-header">
-            <h2 className="section-title">Our <span className="gradient-text">Team</span></h2>
+            <h2 className="section-title">Our <span className="gradient-text">Team of Talents</span></h2>
             <p className="section-subtitle">Milestones that mark our journey of excellence</p>
           </div>
           

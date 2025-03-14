@@ -20,7 +20,7 @@ const FAQSection = () => {
           </div>
           {activeIndex === 0 && (
             <div className="faq-answer">
-              <p>Omex Technology Inc. offers a range of services including Website Development, Web Application Development, Mobile App Development, and QA services.</p>
+              <p>Omex Technology Inc. offers a range of services including Website Development, Web Application Development, Mobile App Development, QA services and we also accepts Support Projects.</p>
             </div>
           )}
         </div>
@@ -32,7 +32,7 @@ const FAQSection = () => {
           </div>
           {activeIndex === 1 && (
             <div className="faq-answer">
-              <p>The timeline depends on the complexity and requirements of the project. On average, a website can take anywhere from 4 to 12 weeks to develop.</p>
+              <p>The timeline depends on the complexity and requirements of the project. On average, a website can take anywhere from 1 Week it may Extend accoding to requirements.</p>
             </div>
           )}
         </div>

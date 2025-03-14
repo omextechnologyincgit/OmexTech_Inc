@@ -15,7 +15,7 @@ const Footer = () => {
               <span className="logo-icon">
                 <img src={logo} alt="logohere" style={{width:'50px',height:'50px'}} />
               </span>
-              <span className="logo-text">Omex Technology Inc</span>
+              <span className="logo-text" style={{color:'#0a152f'}}>Omex Technology Inc</span>
             </div>
             <p className="brand-description">
               Transforming businesses with innovative technology solutions.
@@ -69,7 +69,7 @@ const Footer = () => {
       <div className="divider"></div>
       
       <div className="footer-bottom">
-        <p className="copyright">© 2025 Omex Technology Inc. All rights reserved.</p>
+        <p className="copyright">© 2025 <span style={{color:'#0a152f'}}>Omex Technology Inc</span> All rights reserved.</p>
         <p className="credits">Designed and developed with <span className="heart">❤</span></p>
       </div>
     </footer>

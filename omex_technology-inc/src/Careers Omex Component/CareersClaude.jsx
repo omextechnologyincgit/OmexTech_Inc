@@ -32,6 +32,7 @@ import '../Careers style Component/CareersClaude.css';
 import engiimage from '../assets/graduates.jpg';
 import freshers from '../assets/freshers.jpg';
 import professionals from '../assets/professionals.jpg';
+import { Link } from 'react-router-dom';
 
 const CareersClaude = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -241,8 +242,8 @@ const CareersClaude = () => {
                 <FaCoffee />
               </div>
               <div className="benefit-content">
-                <h3>Catered Lunches</h3>
-                <p>Free daily lunches for in-office employees.</p>
+                <h3>Happy Work Place Lunches</h3>
+                <p>Happy Work place for employees to work.</p>
               </div>
             </div>
             <div className="benefit-item">
@@ -250,7 +251,7 @@ const CareersClaude = () => {
                 <FaDog />
               </div>
               <div className="benefit-content">
-                <h3>Pet-Friendly Office</h3>
+                <h3>Friendly Office</h3>
                 <p>Bring your furry friends to work with you.</p>
               </div>
             </div>
@@ -259,7 +260,7 @@ const CareersClaude = () => {
       </section>
 
       {/* Open Positions Section */}
-      <section className={`positions-section ${scrollY > 1200 ? 'visible' : ''}`}>
+      {/* <section className={`positions-section ${scrollY > 1200 ? 'visible' : ''}`}>
         <div className="section-header">
           <h2>Open Positions</h2>
           <p>Find your perfect role and help us build something amazing.</p>
@@ -310,7 +311,7 @@ const CareersClaude = () => {
             </div>
           )}
         </div>
-      </section>
+      </section> */}
 
       {/* Hiring Process Section */}
       <section className={`process-section ${scrollY > 1800 ? 'visible' : ''}`}>
@@ -405,21 +406,30 @@ const CareersClaude = () => {
       </section>
 
       {/* CTA Section */}
+      <center>
       <section className={`cta-section ${scrollY > 2700 ? 'visible' : ''}`}>
+     
         <div className="cta-content">
           <h2>Ready to Join Our Team?</h2>
           <p>We're always looking for exceptional talent to help us build the future of software.</p>
           <div className="cta-buttons">
+         
+          <a href="mailto:contact@omextechnologyinc.com" style={{textDecoration:'none'}}>
+           
             <button className="primary-button">
-              <span>View Open Positions</span>
+              <span>Talk to Us Or Mail Us</span>
               <FaArrowRight className="button-icon" />
             </button>
-            <button className="secondary-button">
+            </a>
+            
+            <Link to="/aboutOmex"> <button className="secondary-button">
               <span>Learn More About Us</span>
-            </button>
+            </button></Link>
           </div>
         </div>
+         
       </section>
+      </center>
     </div>
   );
 };

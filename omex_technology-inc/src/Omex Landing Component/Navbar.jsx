@@ -21,7 +21,7 @@ const OmexNavbar = () => {
         {/* Logo */}
         <div className="logo-container">
           <div className="logo">
-            <img src={logo} alt="terran" style={{ width: '70px',height:'50px' }} />Omex Technology Inc
+            <img src={logo} alt="terran" style={{ width: '60px',height:'50px' }} /> <span style={{color:'#0a152f'}}>Omex Technology Inc</span>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </div>
         </div>
