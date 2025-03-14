@@ -55,6 +55,13 @@ const ContactPage = () => {
             </div>
             
             <h1 style={{color :'black',fontWeight:'bold',fontSize:'24px'}}>Follow Omex Technology Inc</h1>
+            <div className='social-icon' style={{display:'flex',gap:'20px'}}>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <i class="bi bi-linkedin"></i>
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-twitter-x"></i>
+            </div>
                
             <div className="company-info">
               <div className="info-box">

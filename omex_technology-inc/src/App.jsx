@@ -38,6 +38,7 @@ import SupportMain from './Support Omex Component/SupportMain';
 import CareersClaude from './Careers Omex Component/CareersClaude';
 import FAQSection from './Careers Omex Component/FAQ';
 
+import ContactHeroo from './Support Omex Component/SupportImageContainer';
 
 function App() {
    
@@ -105,6 +106,7 @@ function App() {
                  <Route path="/supportOmex" element={
                     <>
                    <OmexNavbar/>
+                   <ContactHeroo/>
                     <SupportHome/>
                      
                     <Footer/>
