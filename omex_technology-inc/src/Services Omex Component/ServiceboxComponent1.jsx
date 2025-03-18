@@ -102,11 +102,7 @@ const FeatureBoxes1 = () => {
                     <div className="feature-image">
                         <img src={serviceimage4} alt="website kaka" style={{height:'300px'}} />
                         <div className="feature-overlay">
-                            <div className="scene-buttons">
-                            <Link to="/supportOmex" style={{textDecoration:'none'}}><div className="scene-button">Support</div></Link>
-                            <Link to="/supportOmex" style={{textDecoration:'none'}}> <div className="scene-button">Contact Omex</div></Link>
-                            <Link to="/supportOmex" style={{textDecoration:'none'}}> <div className="scene-button">Get in Touch</div></Link>
-                            </div>
+                             
                             <div className="scene-snippets">
                             </div>
                         </div>
@@ -156,11 +152,7 @@ const FeatureBoxes1 = () => {
                     <div className="feature-image">
                     <img src={serviceimage5} alt="web app kkk" style={{height:'300px'}} />
                         <div className="feature-overlay">
-                            <div className="scene-buttons">
-                            <Link to="/supportOmex" style={{textDecoration:'none'}}><div className="scene-button">Support</div></Link>
-                            <Link to="/supportOmex" style={{textDecoration:'none'}}> <div className="scene-button">Contact Omex</div></Link>
-                            <Link to="/supportOmex" style={{textDecoration:'none'}}> <div className="scene-button">Get in Touch</div></Link>
-                            </div>
+                             
                             <div className="scene-snippets">
                                 
                                 
@@ -215,11 +207,7 @@ const FeatureBoxes1 = () => {
                     <div className="feature-image">
                     <img src={serviceimage6} alt="tablll" style={{height:'300px'}} />
                         <div className="feature-overlay">
-                            <div className="scene-buttons">
-                            <Link to="/supportOmex" style={{textDecoration:'none'}}><div className="scene-button">Support</div></Link>
-                            <Link to="/supportOmex" style={{textDecoration:'none'}}> <div className="scene-button">Contact Omex</div></Link>
-                            <Link to="/supportOmex" style={{textDecoration:'none'}}> <div className="scene-button">Get in Touch</div></Link>
-                            </div>
+                            
                             <div className="scene-snippets">
                                 
                                 

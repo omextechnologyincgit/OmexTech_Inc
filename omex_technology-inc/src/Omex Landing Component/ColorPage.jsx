@@ -47,11 +47,7 @@ const HeroColor = () => {
           </div>
           <div className="filmora-hero-buttons">
             <button className="btn-get-started">
-              <span className="windows-icon">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 2.26L6.55 1.46V7.45H0V2.26ZM0 13.74L6.55 14.54V8.55H0V13.74ZM7.45 14.66L16 15.7V8.55H7.45V14.66ZM7.45 1.34V7.45H16V0.3L7.45 1.34Z" fill="#333" />
-                </svg>
-              </span>
+              
               <Link to="/supportOmex" style={{textDecoration:'none'}}>Get in Touch</Link>
             </button>
            

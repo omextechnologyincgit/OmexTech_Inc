@@ -38,7 +38,7 @@ const OmexNavbar = () => {
           <Link to="/careerOmex" className="nav-link">Careers</Link>
           <Link to="/supportOmex" className="nav-link">
             Support
-            <span className="badge">Contact Omex Technology</span>
+            <span className="badge">Contact</span>
           </Link>
         </nav>
 
@@ -53,9 +53,7 @@ const OmexNavbar = () => {
           <button className="icon-button">
             
           </button>
-          <button className="icon-button">
-            <MessageSquare size={20} />
-          </button>
+           
         </div>
 
         {/* Mobile menu button */}
@@ -74,9 +72,7 @@ const OmexNavbar = () => {
           <div className="logo">
             <img src={logo} alt="terran" style={{ width: '200px' }} />
           </div>
-          <button className="close-button" onClick={closeSidebar}>
-            <X size={24} />
-          </button>
+          
         </div>
         <nav className="sidebar-nav">
           <Link to="/" className="sidebar-link">Home</Link>
@@ -86,7 +82,7 @@ const OmexNavbar = () => {
           <Link to="/careerOmex" className="sidebar-link">Careers</Link>
           <Link to="/supportOmex" className="sidebar-link">Support</Link>
           <Link to="/supportOmex" className="sidebar-link">
-            <span className="badge mobile-badge">Contact Omex Technology</span>
+            <span className="badge mobile-badge">Contact</span>
           </Link>
         </nav>
       </div>

@@ -34,32 +34,26 @@ const OmexServices = () => {
   const features = [
     {
       title: "Website Development",
-      info: "Automatically detect and precisely cut out portrait subjects with smart edge detection.",
       image: image1 
     },
     {
       title: "Web Application Development",
-      info: "Remove video backgrounds with one click, perfect for professional content creation.",
       image: image5
     },
     {
       title: "QA Services",
-      info: "Intelligently match and harmonize colors across your entire project with AI assistance.",
       image: image3
     },
     {
       title: "Support Projects",
-      info: "AI-powered editing tools that enhance your content with professional quality results.",
       image: image4
     },
     {
       title: "Mobile App Development",
-      info: "Clean up and enhance audio automatically with advanced AI processing.",
       image: image2
     },
     {
       title: "Custom Software development",
-      info: "Generate accurate captions for your videos using state-of-the-art speech recognition.",
       image: image6
     }
   ];

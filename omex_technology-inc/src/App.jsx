@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import "./app.css"
 // import LandingHome from './Omex Landing Component/LandingHome';
 import OmexNavbar from './Omex Landing Component/Navbar';
-import HeroMitt from './Omex Landing Component/OmexKhaja';
+import HomeMitt from './Home Component/HomeComponent';
 import AboutSection from './Omex Landing Component/AboutSection';
 import OmexServices from './Omex Landing Component/OmexServices';
 import WhyChooseOmex from './Omex Landing Component/WhyChoose';
@@ -50,10 +50,9 @@ function App() {
                 <Route path="/" element={
                     <>
                      
-                    <OmexNavbar/>
-                     <div className="app">
-                      <HeroMitt />
-                       </div>
+                     
+                    <HomeMitt />
+                    
                        <AboutSection/>
                        <OmexServices />
                         <WhyChooseOmex />
