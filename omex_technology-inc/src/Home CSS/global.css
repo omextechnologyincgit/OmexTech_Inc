@@ -246,12 +246,14 @@
   max-width: 1400px;
   margin: 0 auto;
   padding: 40px 24px;
+  
 }
 
 .hero-section {
   display: flex;
   gap: 40px;
   align-items: flex-start;
+  border-radius: 8px;
 }
 
 .hero-left {

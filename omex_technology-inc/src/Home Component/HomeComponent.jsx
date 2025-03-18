@@ -106,24 +106,23 @@ const HomeMitt = () => {
           </button>
         </div>
         <div className="sidebar-links">
-        <Link to="servicesOmex" onClick={toggleSidebar}>
+        <Link to="/" onClick={toggleSidebar}>
             Home
           </Link>
-          <Link to="aboutOmex" onClick={toggleSidebar}>
+          <Link to="/aboutOmex" onClick={toggleSidebar}>
             About Omex
-           
           </Link>
-          <Link to="servicesOmex" onClick={toggleSidebar}>
+          <Link to="/servicesOmex" onClick={toggleSidebar}>
             Services
           </Link>
-          <Link to="careerOmex" onClick={toggleSidebar}>
+          <Link to="/careerOmex" onClick={toggleSidebar}>
             Careers
           </Link>
           
-          <Link to="supportOmex" onClick={toggleSidebar}>
+          <Link to="/supportOmex" onClick={toggleSidebar}>
             Support
           </Link>
-          <Link to="servicesOmex" onClick={toggleSidebar}>
+          <Link to="/supportOmex" onClick={toggleSidebar}>
             Contact
           </Link>
         </div>
@@ -153,18 +152,14 @@ const HomeMitt = () => {
             
           </div>
           <div className="hero-right">
-            <div className="profile-avatars">
-              {[1, 2, 3, 4, 5, 6].map((i) => (
-                <div key={i} className="avatar" style={{ backgroundPosition: `${i * -40}px 0` }}></div>
-              ))}
-            </div>
+            
             <div className="demo-card">
                 <h2 className="demo-title">Beautify your website with omex Technology</h2>
-                <p className="demo-description">
+                <p className="demo-description" style={{color:'white'}}>
                   With Omex Technology, you can build great looking websites within Time.
                 </p>
                 <div className="demo-content">
-                  <div className="hover-text">A website speak more than words</div>
+                  <div className="hover-text" style={{fontWeight:'bold'}}>A website speak more than words</div>
                   {/* Moving dots - increased to 30 dots */}
                   {Array.from({ length: 30 }).map((_, index) => (
                     <div

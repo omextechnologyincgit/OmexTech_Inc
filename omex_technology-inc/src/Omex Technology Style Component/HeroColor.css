@@ -1,402 +1,416 @@
 /* Filmora Hero Section Styles */
 .filmora-hero-container {
-    width: 100%;
-    min-height: 500px;
-    background: linear-gradient(135deg, #2a0845 0%, #1a1a35 50%, #003329 100%);
-    padding: 60px 40px;
-    overflow: hidden;
-    position: relative;
-    opacity: 0;
-    transform: translateY(50px);  /* Start from the bottom */
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Smooth transition */
+  width: 100%;
+  min-height: 500px;
+  background: linear-gradient(135deg, #2a0845 0%, #1a1a35 50%, #003329 100%);
+  padding: 60px 40px;
+  overflow: hidden;
+  position: relative;
+  opacity: 0;
+  transform: translateY(50px); /* Start from the bottom */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Smooth transition */
 }
 
 .filmora-hero-container.visible {
-    opacity: 1;
-    transform: translateY(0);  /* Move to original position */
+  opacity: 1;
+  transform: translateY(0); /* Move to original position */
 }
-  
-  .filmora-hero-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-  }
-  
-  /* Left Side Styles */
-  .filmora-hero-left {
-    width: 45%;
-    z-index: 2;
-  }
-  
-  .filmora-logo-container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-  }
-  
-  .filmora-logo-icon {
-    margin-right: 15px;
-  }
-  
-  .filmora-logo-text h2 {
-    font-size: 18px;
-    font-weight: 500;
-    color: white;
-    margin: 0;
-    margin-bottom: 5px;
-  }
-  
-  .filmora-logo-text h1 {
-    font-size: 32px;
-    font-weight: 700;
-    color: white;
-    margin: 0;
-  }
-  
-  .filmora-hero-text h2 {
-    font-size: 40px;
-    font-weight: 700;
-    color: #00E0C7;
-    margin: 0;
-    margin-bottom: 40px;
-  }
-  
-  .filmora-hero-buttons {
-    display: flex;
-    gap: 15px;
-  }
-  
-  .filmora-hero-buttons button {
-    padding: 12px 24px;
-    border-radius: 6px;
-    border: none;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .btn-get-started {
-    background-color: #00E0C7;
-    color: #333;
-  }
-  
-  .windows-icon {
-    display: inline-flex;
-    margin-right: 10px;
-  }
-  
-  .btn-buy-now {
-    background-color: #0080FF;
-    color: white;
-  }
-  
-  /* Right Side Styles */
-  .filmora-hero-right {
-    width: 50%;
-    position: relative;
-    height: 400px;
-  }
-  
-  .filmora-image-stack {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .filmora-image {
-    position: absolute;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  }
-  
-  .filmora-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
+
+.filmora-hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+/* Left Side Styles */
+.filmora-hero-left {
+  width: 45%;
+  z-index: 2;
+}
+
+.filmora-logo-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.filmora-logo-icon {
+  margin-right: 15px;
+}
+
+.filmora-logo-text h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.filmora-logo-text h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+.filmora-hero-text h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #00e0c7;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.filmora-hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.filmora-hero-buttons button {
+  padding: 12px 24px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-get-started {
+  background-color: #00e0c7;
+  color: #333;
+}
+
+.contact-icon {
+  margin-right: 8px;
+}
+
+.windows-icon {
+  display: inline-flex;
+  margin-right: 10px;
+}
+
+.btn-buy-now {
+  background-color: #0080ff;
+  color: white;
+}
+
+/* Right Side Styles */
+.filmora-hero-right {
+  width: 50%;
+  position: relative;
+  height: 400px;
+}
+
+.filmora-image-stack {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.filmora-image {
+  position: absolute;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.filmora-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
+  pointer-events: none;
+}
+
+.filmora-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.filmora-image:hover img {
+  transform: scale(1.05);
+}
+
+/* Adjusted positions for just two images */
+.image-1 {
+  width: 250px;
+  height: 320px;
+  left: 0;
+  top: 40px;
+  z-index: 1;
+}
+
+.image-2 {
+  width: 250px;
+  height: 300px;
+  left: 220px;
+  top: 0;
+  z-index: 3;
+}
+
+.ai-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 224, 199, 0.8);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.tech-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(207, 0, 255, 0.8);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.filmora-floating-element {
+  position: absolute;
+  z-index: 4;
+}
+
+.purple-circle {
+  width: 40px;
+  height: 40px;
+  background-color: #cf00ff;
+  border-radius: 50%;
+  left: 150px;
+  top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-inner {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+.video-control {
+  bottom: 30px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 6px 12px;
+  width: 120px;
+}
+
+.control-bar {
+  display: flex;
+  align-items: center;
+}
+
+.control-icon {
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress {
+  width: 70%;
+  height: 100%;
+  background: linear-gradient(90deg, #cf00ff, #00e0c7);
+  border-radius: 3px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1100px) {
   .image-1 {
     width: 220px;
-    height: 320px;
-    left: 0;
-    top: 40px;
-    z-index: 1;
+    height: 280px;
   }
-  
+
   .image-2 {
     width: 220px;
-    height: 300px;
+    height: 260px;
     left: 180px;
-    top: 0;
-    z-index: 3;
   }
-  
-  .image-3 {
-    width: 220px;
-    height: 280px;
-    left: 360px;
-    top: 60px;
-    z-index: 2;
+}
+
+@media (max-width: 992px) {
+  .filmora-hero-content {
+    flex-direction: column;
   }
-  
-  .ai-badge {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: rgba(0, 224, 199, 0.8);
-    color: white;
-    padding: 4px 8px;
-    border-radius: 4px;
-    font-size: 12px;
-    font-weight: 700;
+
+  .filmora-hero-left {
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
   }
-  
-  .filmora-floating-element {
-    position: absolute;
-    z-index: 4;
-  }
-  
-  .purple-circle {
-    width: 40px;
-    height: 40px;
-    background-color: #cf00ff;
-    border-radius: 50%;
-    left: 150px;
-    top: 200px;
-    display: flex;
-    align-items: center;
+
+  .filmora-logo-container {
     justify-content: center;
   }
-  
-  .circle-inner {
-    width: 20px;
-    height: 20px;
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 50%;
+
+  .filmora-hero-buttons {
+    justify-content: center;
   }
-  
-  .video-control {
-    bottom: 30px;
-    right: 20px;
-    background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    padding: 6px 12px;
-    width: 120px;
+
+  .filmora-hero-right {
+    width: 100%;
+    height: 350px;
   }
-  
-  .control-bar {
+
+  .filmora-image-stack {
     display: flex;
-    align-items: center;
+    justify-content: center;
   }
-  
-  .control-icon {
-    width: 12px;
-    height: 12px;
-    background-color: white;
-    border-radius: 50%;
-    margin-right: 8px;
+
+  .image-1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 280px;
+    margin-right: 20px;
   }
-  
-  .progress-bar {
-    flex: 1;
-    height: 6px;
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 3px;
-    overflow: hidden;
+
+  .image-2 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 280px;
+    margin-left: 20px;
   }
-  
-  .progress {
-    width: 70%;
-    height: 100%;
-    background: linear-gradient(90deg, #cf00ff, #00E0C7);
-    border-radius: 3px;
+
+  .purple-circle {
+    left: 25%;
+    top: -20px;
   }
-  
-  /* Media Queries for Responsiveness */
-  @media (max-width: 1100px) {
-    .image-1 {
-      width: 200px;
-      height: 300px;
-    }
-    
-    .image-2 {
-      width: 200px;
-      height: 280px;
-      left: 160px;
-    }
-    
-    .image-3 {
-      width: 200px;
-      height: 260px;
-      left: 320px;
-    }
+
+  .video-control {
+    right: 25%;
+    bottom: -10px;
   }
-  
-  @media (max-width: 992px) {
-    .filmora-hero-content {
-      flex-direction: column;
-    }
-    
-    .filmora-hero-left {
-      width: 100%;
-      margin-bottom: 50px;
-      text-align: center;
-    }
-    
-    .filmora-logo-container {
-      justify-content: center;
-    }
-    
-    .filmora-hero-buttons {
-      justify-content: center;
-    }
-    
-    .filmora-hero-right {
-      width: 100%;
-    }
-    
-    .filmora-image-stack {
-      display: flex;
-      justify-content: center;
-    }
-    
-    .image-1 {
-      position: relative;
-      top: 0;
-      left: 0;
-      width: 30%;
-      height: 300px;
-      margin: 0 -20px;
-    }
-    
-    .image-2 {
-      position: relative;
-      top: -20px;
-      left: 0;
-      width: 30%;
-      height: 320px;
-      z-index: 5;
-      margin: 0 -20px;
-    }
-    
-    .image-3 {
-      position: relative;
-      top: 0;
-      left: 0;
-      width: 30%;
-      height: 300px;
-      margin: 0 -20px;
-    }
-    
-    .purple-circle {
-      left: 25%;
-      top: -20px;
-    }
-    
-    .video-control {
-      right: 25%;
-      bottom: -10px;
-    }
+}
+
+@media (max-width: 768px) {
+  .filmora-hero-container {
+    padding: 40px 20px;
   }
-  
-  @media (max-width: 768px) {
-    .filmora-hero-container {
-      padding: 40px 20px;
-    }
-    
-    .filmora-hero-text h2 {
-      font-size: 32px;
-      margin-bottom: 30px;
-    }
-    
-    .filmora-hero-buttons {
-      flex-direction: column;
-      gap: 10px;
-      max-width: 300px;
-      margin: 0 auto;
-    }
-    
-    .filmora-hero-buttons button {
-      width: 100%;
-    }
-    
-    .image-1, .image-2, .image-3 {
-      height: 250px;
-    }
+
+  .filmora-hero-text h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
   }
-  
-  @media (max-width: 576px) {
-    .filmora-hero-text h2 {
-      font-size: 28px;
-    }
-    
-    .filmora-hero-right {
-      height: 300px;
-    }
-    
-    .image-1, .image-3 {
-      width: 40%;
-      height: 200px;
-      top: 20px;
-    }
-    
-    .image-2 {
-      width: 45%;
-      height: 220px;
-    }
-    
-    .purple-circle {
-      width: 30px;
-      height: 30px;
-    }
-    
-    .circle-inner {
-      width: 15px;
-      height: 15px;
-    }
-    
-    .video-control {
-      width: 100px;
-    }
+
+  .filmora-hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    margin: 0 auto;
   }
-  
-  @media (max-width: 480px) {
-    .filmora-logo-text h1 {
-      font-size: 28px;
-    }
-    
-    .filmora-logo-text h2 {
-      font-size: 16px;
-    }
-    
-    .filmora-hero-text h2 {
-      font-size: 24px;
-    }
-    
-    .image-1, .image-3 {
-      display: none;
-    }
-    
-    .image-2 {
-      width: 80%;
-      height: 280px;
-      position: relative;
-      margin: 0 auto;
-    }
-    
-    .purple-circle {
-      left: 30%;
-    }
-    
-    .video-control {
-      right: 30%;
-    }
+
+  .filmora-hero-buttons button {
+    width: 100%;
   }
+
+  .filmora-hero-right {
+    height: 300px;
+  }
+
+  .image-1,
+  .image-2 {
+    height: 240px;
+  }
+}
+
+@media (max-width: 576px) {
+  .filmora-hero-text h2 {
+    font-size: 28px;
+  }
+
+  .filmora-hero-right {
+    height: 250px;
+  }
+
+  .image-1,
+  .image-2 {
+    width: 45%;
+    height: 200px;
+  }
+
+  .purple-circle {
+    width: 30px;
+    height: 30px;
+  }
+
+  .circle-inner {
+    width: 15px;
+    height: 15px;
+  }
+
+  .video-control {
+    width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .filmora-logo-text h1 {
+    font-size: 28px;
+  }
+
+  .filmora-logo-text h2 {
+    font-size: 16px;
+  }
+
+  .filmora-hero-text h2 {
+    font-size: 24px;
+  }
+
+  .filmora-hero-right {
+    height: 200px;
+  }
+
+  .image-1,
+  .image-2 {
+    width: 45%;
+    height: 180px;
+  }
+}
+
+@media (max-width: 400px) {
+  .filmora-hero-right {
+    height: 180px;
+  }
+
+  .image-1,
+  .image-2 {
+    width: 45%;
+    height: 160px;
+  }
+}
+
