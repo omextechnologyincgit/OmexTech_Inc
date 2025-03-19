@@ -69,7 +69,7 @@ const HomeMitt = () => {
             <div className="logo-icon">
                 <img src={logo} alt="classic cassino" style={{width:'200px',height:'50px'}}/>
             </div>
-            <span className="logo-text">Omex Technology</span>
+            <span className="logo-text" style={{color:'#0a152f'}}>Omex Technology Inc</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -99,7 +99,7 @@ const HomeMitt = () => {
             <div className="logo-icon">
             <img src={logo} alt="classic cassino" style={{width:'200px',height:'50px'}}/>
             </div>
-            <span className="logo-text">Omex Technology</span>
+            <span className="logo-text" style={{color:'#0a152f'}}>Omex Technology Inc</span>
           </div>
           <button className="close-sidebar" onClick={toggleSidebar}>
             <X size={24} />

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import '../ServiceComponentStyle/ServiceComponent.css';
-import serviceimage4 from '../assets/mobile app development.png';
+import serviceimage4 from '../assets/mobile app development image service.avif';
 import serviceimage5 from '../assets/custom software image.jpeg';
 import serviceimage6 from '../assets/software support.jpeg';
 import { Link } from 'react-router-dom';

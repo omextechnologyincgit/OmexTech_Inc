@@ -1,5 +1,5 @@
 import React from 'react';
-import servicesimage from '../assets/servicesMainimageee.jpg'; 
+import servicesimage from '../assets/servicemainimagehereok.jpg'; 
 
 const ServiceMain = () => {
   return (

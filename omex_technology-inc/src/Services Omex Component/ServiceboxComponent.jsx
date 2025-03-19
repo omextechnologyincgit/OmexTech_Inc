@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import '../ServiceComponentStyle/ServiceComponent.css';
-import serviceimage from '../assets/website image.jpeg';
-import serviceimage1 from '../assets/web application.jpeg';
+import serviceimage from '../assets/image1forservice.avif';
+import serviceimage1 from '../assets/web application imageservice.avif';
 import serviceimage2 from '../assets/qa service image.jpeg';
 import {Link} from 'react-router-dom';
 const FeatureBoxes = () => {
